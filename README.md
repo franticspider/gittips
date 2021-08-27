@@ -2,6 +2,14 @@
 
 Things I've found useful in using git on the command line
 
+
+# Admin
+
+## Find the url of remote
+
+`git config --get remote.origin.url`
+
+
 # Adding
 
 ## Checking the add
@@ -81,6 +89,16 @@ To create a corresponding remote branch (and implicitly push to it) if it doesn'
 `git push -u origin nlb`
 
 Once the remote branch exists, you can just `git push`
+
+## Branch from an ealier commit:
+
+[https://stackoverflow.com/questions/2816715/branch-from-a-previous-commit-using-git]
+
+just add the hash of the earlier version to the branching command when you create the branch
+
+`git branch newbranch 2ece193dc53778952cf5592ef2af103e9fec7c9a`
+
+
 
 # Merging
 
